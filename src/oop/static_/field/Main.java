@@ -31,13 +31,19 @@ public class Main {
 
         System.out.println("인스턴스 변수 c3.a = " + c3.a);
         System.out.println("정적 변수 c3.b = " + c3.b);
-
+        System.out.println("정적 변수 c1.b = " + c1.b);
+        System.out.println("정적 변수 c2.b = " + c2.b);
         /*
          - static이 붙은 데이터는 그 static 데이터가 선언된
           클래스의 이름으로 바로 참조할 수 있습니다.
          - 일반 멤버변수(필드)와 혼동할 가능성이 있기 때문에
           주소값으로 접근하지 않습니다.
          */
+
+        Count.b++;
+        Count.b++;
+
+        System.out.println("정적 변수 Count.b: " + Count.b);
 
     }
 
