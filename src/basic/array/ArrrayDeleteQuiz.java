@@ -44,7 +44,7 @@ public class ArrrayDeleteQuiz {
 
             // 삭제 여부 확인
             if(index != -1){
-                System.out.println(kakao[index] + "의 이름을 삭자합니다.");
+                System.out.println(kakao[index] + "의 이름을 삭제합니다.");
 
                 // 삭제 알고리즘
                 for (int i = index; i < kakao.length-1; i++) {
