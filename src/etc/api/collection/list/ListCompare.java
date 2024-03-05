@@ -17,7 +17,7 @@ public class ListCompare {
         List<Integer> array = new ArrayList<>();
         List<Integer> linked = new LinkedList<>();
 
-        for (int i = 0; i < 1000000; i++) {
+        for (int i = 0; i < 100000; i++) {
             array.add(i);
             linked.add(i);
         }
@@ -39,8 +39,8 @@ public class ListCompare {
         start = System.currentTimeMillis();
 
         for (int i = 0; i < linked.size(); i++) {
-//            linked.remove(0);
-            linked.get(i);
+            linked.remove(0);
+//            linked.get(i);
         }
 
         end = System.currentTimeMillis();
