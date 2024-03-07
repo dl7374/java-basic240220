@@ -108,7 +108,9 @@ public class MovieRepository {
         return searchedList;
     }
 
-
+    public Movie deleteMovie(int delMovieNum) {
+        return movieDatabase.remove(delMovieNum);
+    }
 }
 
 
